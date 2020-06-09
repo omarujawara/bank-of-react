@@ -9,9 +9,14 @@ class Home extends Component{
                 <img src="https://picsum.photos/200" alt="randomPic"/>
                 <h1>Bank of React</h1>
 
-                <Link to="/userProfile">User Profile</Link>
-
-                <AccountBalance accountBalance={this.props.accountBalance}/>
+                <Link to="/userProfile">User Profile</Link><br/>
+                <AccountBalance accountBalance/>
+                <Link to="/userProfile">
+                    <button>Debit</button>
+                </Link>
+                <Link to="/userProfile">
+                    <button>Credit</button>
+                </Link>
 
             </React.Fragment>
         )
